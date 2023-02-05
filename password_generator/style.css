@@ -1,0 +1,149 @@
+body,
+html {
+  background-color: #9a8c98;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+  height: 100vh;
+}
+
+.container {
+  width: 50%;
+  padding: 3rem 2rem;
+  box-shadow: 0px 0px 12px 5px white;
+  border-radius: 1rem;
+  color: #4a4e69;
+}
+
+.fa-lock {
+  font-size: 1.5rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  margin: 1rem 0 2rem;
+}
+
+.password-container {
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.password-container input {
+  padding: 10px;
+  background: none;
+  font-size: 1rem !important;
+  text-align: center;
+  color: white;
+}
+
+.password-container button {
+  background: none;
+  padding: 10px;
+}
+
+.password-length label {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.password-length output{
+  background: #4a4e69;
+  padding: 5px 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.password-length input[type='range'] {
+  appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#4a4e69, #4a4e69);
+  background-size: 16% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb */
+.password-length input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #4a4e69;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+.password-length input[type='range']::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #4a4e69;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+.password-length input[type='range']::-ms-thumb {
+  -ms-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #4a4e69;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+}
+
+#generateBtn {
+  background-color: #4a4e69;
+  border: 2px solid #4a4e69;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+#generateBtn:hover {
+  background-color: #3f4259;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 93%;
+  }
+  .container h1 {
+    font-size: 1.7rem;
+  }
+}
