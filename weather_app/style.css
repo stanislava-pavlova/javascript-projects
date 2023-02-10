@@ -1,0 +1,72 @@
+body, html {
+  background-color: #9a8c98;
+  font-family: Arial, Helvetica, sans-serif;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #000000c5;
+  color: white;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+.search > button {
+  margin: 0.5rem;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  background: #7c7c7c2b;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.search > button:hover {
+  background: #7c7c7c6b;
+}
+
+input.search-bar {
+  background: #7c7c7c2b;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 21px;
+  font-size: 105%;
+  width: 90%;
+}
+
+.town {
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 1rem 0;
+}
+
+h3.city {
+  font-size: 1.5rem;
+}
+h2.temp {
+  margin-bottom: 0.4rem;
+}
+p:not(:last-child) {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
